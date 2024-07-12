@@ -9,8 +9,6 @@ class Header extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final currentUser = ref.watch(currentUserProvider);
-
     return AppBar(
       title: const Text('SNS APP', style: TextStyle(color: Colors.white)),
       actions: [
@@ -20,8 +18,8 @@ class Header extends ConsumerWidget {
             PopupMenuItem<int>(
               value: 0,
               child: ListTile(
-                title: Text(currentUser!.userMetadata!["name"]),
-                subtitle: Text(currentUser.email!),
+                title: Text("user name"),
+                subtitle: Text("user email"),
               ),
             ),
             const PopupMenuItem<int>(
