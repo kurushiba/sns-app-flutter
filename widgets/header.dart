@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:sns_app/modules/auth/current_user.store.dart';
 
 class Header extends ConsumerWidget {
   const Header({
