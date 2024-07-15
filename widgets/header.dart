@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class Header extends ConsumerWidget {
+class Header extends StatelessWidget {
   const Header({
     super.key,
   });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return AppBar(
       title: const Text('SNS APP', style: TextStyle(color: Colors.white)),
       actions: [
