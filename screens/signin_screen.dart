@@ -78,7 +78,7 @@ class SigninScreenState extends State<SigninScreen> {
                         textStyle: const TextStyle(
                             decoration: TextDecoration.underline),
                       ),
-                      onPressed: () => Navigator.pushNamed(context, '/signup'),
+                      onPressed: () {},
                       child: const Text("Sign Up"),
                     )
                   ],
